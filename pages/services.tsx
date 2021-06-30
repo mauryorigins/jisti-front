@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { DashboardLayout } from '../components/dashboard-layout';
+import { DashboardLayout } from '../components/DashboardLayout';
 
 const Services: FC = () => {
   return (

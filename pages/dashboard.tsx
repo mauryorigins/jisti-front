@@ -1,8 +1,8 @@
 import { Button, Grid } from '@material-ui/core';
 import { FC } from 'react';
 
+import { DashboardLayout } from '../components/DashboardLayout';
 import Banner from '../components/banner';
-import { DashboardLayout } from '../components/dashboard-layout';
 
 const Home: FC = () => {
   return (
