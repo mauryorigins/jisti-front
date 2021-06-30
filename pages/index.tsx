@@ -1,9 +1,10 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home: FC = () => {
   return (
     <>
-      <a href="/dashboard">Go to Dashboard</a>
+      <Link to="/dashboard">Go to Dashboard</Link>
     </>
   );
 };

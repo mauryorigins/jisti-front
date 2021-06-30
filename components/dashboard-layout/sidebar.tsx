@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './dashboard-layout.module.css';
 
@@ -12,10 +13,13 @@ const Sidebar: FC = () => {
         </div>
         <div className={styles['sidebar-content']}>
           <p>
-            <a href="/dashboard">Dashboard</a>
+            <Link to="/">Home</Link>
           </p>
           <p>
-            <a href="/services">Services</a>
+            <Link to="/dashboard">Dashboard</Link>
+          </p>
+          <p>
+            <Link to="/services">Services</Link>
           </p>
         </div>
       </div>
