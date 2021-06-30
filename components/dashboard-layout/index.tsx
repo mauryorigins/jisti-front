@@ -20,15 +20,13 @@ const DashboardLayout: FC<IProps> = ({ children, title = 'Onephase' }) => {
       </Head>
 
       <div className={styles['dashboard-layout']}>
-        <div className={styles['dashboard-layout-container']}>
-          <Sidebar />
-          <div className={styles['dashboard-layout-content']}>
-            <Navbar />
-            <main className={styles['dashboard-layout-content-child']}>
-              {children}
-            </main>
-            <Footer />
-          </div>
+        <Sidebar />
+        <div className={styles['dashboard-layout-content']}>
+          <Navbar />
+          <main className={styles['dashboard-layout-content-child']}>
+            {children}
+          </main>
+          <Footer />
         </div>
       </div>
     </>

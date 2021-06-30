@@ -19,7 +19,7 @@
   --lg: 1280;
   --xl: 1650;
   /* Spacing [ Used for margin and padding separations - intented to encapsule all component's content ] */
-  --navbar-height: 80px;
+  --navbar-height: 74px;
   --footer-height: 50px;
   --sidebar-width: 220px;
   /* --spacing: 1rem;

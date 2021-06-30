@@ -5,7 +5,7 @@ import styles from './dashboard-layout.module.css';
 const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
-      <p>Footer</p>
+      <p>Onephase Dashboard &copy; {new Date().getFullYear()}</p>
     </footer>
   );
 };

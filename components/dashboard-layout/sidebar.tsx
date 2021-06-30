@@ -11,9 +11,12 @@ const Sidebar: FC = () => {
           <p>Sidebar</p>
         </div>
         <div className={styles['sidebar-content']}>
-          {[1, 2, 3, 4].map((index) => (
-            <p key={index}>Sidebar Content {index}</p>
-          ))}
+          <p>
+            <a href="/dashboard">Dashboard</a>
+          </p>
+          <p>
+            <a href="/services">Services</a>
+          </p>
         </div>
       </div>
     </>
