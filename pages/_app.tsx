@@ -12,6 +12,10 @@ const App = () => {
     }
   }, []);
 
+  /**
+   * SPA implementation took from here
+   * https://colinhacks.com/essays/building-a-spa-with-nextjs
+   */
   return (
     <div suppressHydrationWarning>
       {typeof window === 'undefined' ? null : <AppRouter />}
