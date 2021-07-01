@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "off",
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "react/prop-types": 0,
+    "object-shorthand": "error",
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "react/display-name": 0,
+    "import/prefer-default-export": 0,
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "order": "asc" },
+        "newlines-between": "always",
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser"
+}

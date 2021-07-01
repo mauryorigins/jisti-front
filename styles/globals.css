@@ -1,3 +1,32 @@
+/* TODO: not sure if keep this config file or use the 'theme.ts' file */
+/* Make sure this values matches the 'theme.ts' ones */
+:root {
+  /* Palette Colors */
+  --primary: #0165A4;
+  --secondary: #5383FF;
+  --secondary-light: #2571AB;
+  --warning: #ffff00;
+  --info: #F0F0F0;
+  --success: #99ee44;
+  --error: #E44C65;
+  --background: #f9f9f9;
+  --white: #fff;
+  --text: #050505;
+  /* Breakpoints */
+  --xs: 0;
+  --sm: 600;
+  --md: 960;
+  --lg: 1280;
+  --xl: 1650;
+  /* Spacing [ Used for margin and padding separations - intented to encapsule all component's content ] */
+  --navbar-height: 74px;
+  --footer-height: 50px;
+  --sidebar-width: 220px;
+  /* --spacing: 1rem;
+  --spacing-short: 1rem; */
+}
+
+/* Global CSS Styles */
 html,
 body {
   padding: 0;
@@ -14,3 +43,4 @@ a {
 * {
   box-sizing: border-box;
 }
+
